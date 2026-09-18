@@ -207,7 +207,8 @@ h1, h2, h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
+  justify-content: start;
   gap: 24px;
 }
 
@@ -268,17 +269,6 @@ h1, h2, h3 {
 
 .project-card-links a:hover {
   color: var(--color-primary-dark);
-}
-
-.project-card-add {
-  border-style: dashed;
-  justify-content: center;
-  align-items: flex-start;
-  color: var(--color-text-muted);
-}
-
-.project-card-add h3 {
-  color: var(--color-text-muted);
 }
 
 /* Skills */
@@ -350,6 +340,10 @@ h1, h2, h3 {
 
   .nav-toggle {
     display: flex;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
 
